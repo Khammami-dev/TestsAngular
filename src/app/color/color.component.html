@@ -1,0 +1,16 @@
+<!--event binding-->
+<div [style.backgroundColor]="color">color</div>
+<input type="text" #inputColor (change)="ChangeColor(inputColor)" class="form-control">
+<!--two way binding-->
+<div [style.backgroundColor]="color">color</div>
+<input [(ngModel)]="color" type="text" class="form-control">
+<p>Le contenue de la propriété color est {{color}}</p>
+<!--interaction entre composant du pére vers le fils-->
+<!--le composant first ets le père de fils-->
+<!--la properite dans fils n'est pas connu dans le pére, donc on ajout
+    @input() avant la propriete dans le fils pour dire que cette attribut est visible 
+    pour les composnats  
+-->
+<!--communication fils vers père-->
+<!--le parent va écouter l'événement envoyer par le fils (SendRequestToDad)=écouter l'événement-->
+<app-fils (SendRequestToDad)="processRequest($event)" [filsProprity]="color"></app-fils>
