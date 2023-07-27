@@ -1,0 +1,18 @@
+<div class="row">
+   <div class="col-md-6">
+        <input type="text" #inputColor (change)="Changecolor(inputColor)" class="form-control">
+        <input type="number" #inputSize (change)="ChangeSize(inputSize)" class="form-control">
+        
+    </div>
+    <div class="col-md-6">
+        <p [ngStyle]="{
+            'color' : color,
+            'font-size' : size,
+            
+            
+            }">Tester le mini word</p>
+    </div>
+</div>
+
+
+
