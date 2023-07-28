@@ -13,6 +13,7 @@ import { CvComponent } from './PlatfRecrutement/cv/cv.component';
 import { StyleComponent } from './directive/style/style.component';
 import { MiniWordComponent } from './directive/mini-word/mini-word.component';
 import { ClasseComponent } from './directive/classe/classe.component';
+import { EmbaucheComponent } from './PlatfRecrutement/embauche/embauche.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ClasseComponent } from './directive/classe/classe.component';
     CvComponent,
     StyleComponent,
     MiniWordComponent,
-    ClasseComponent
+    ClasseComponent,
+    EmbaucheComponent
   ],
   imports: [
     BrowserModule,
