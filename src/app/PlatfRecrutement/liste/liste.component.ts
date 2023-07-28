@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Personne } from '../models/Personne';
 
 @Component({
   selector: 'app-liste',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./liste.component.css']
 })
 export class ListeComponent {
+  @Input() personnes: Personne[] = [];
 
 }

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Personne } from '../models/Personne';
+
 
 @Component({
   selector: 'app-item',
@@ -6,14 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent {
-  nom1="khouloud Hammami" ;
-  img1="/assets/images/khouloud.jpg";
-  age=28;
-  profession="ingénieure IT"
-
-  
-  SendDetails(){
-    alert("hi");
-  }
+  @Input() personne: Personne = new Personne();
 
 }
