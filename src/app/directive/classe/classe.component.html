@@ -1,1 +1,10 @@
-<p>classe works!</p>
+<p [ngClass]="{
+    'est' : est,
+    'barca' : barca,
+    'milan' : milan
+}">classe works!</p>
+
+<button class="btn btn-danger" (click)="ChangeTeam()">Esperance</button>
+<!--Les directives structurelles-->
+<input *ngIf="show" type="text" class="form-control">
+<button class="btn btn-success" (click)="show=!show">Effacer input</button>
