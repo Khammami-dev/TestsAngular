@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Personne } from '../models/Personne';
 
 @Component({
   selector: 'app-detail',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent {
+ @Input() personne : Personne = new Personne();
+
+  constructor(){}
 
 }

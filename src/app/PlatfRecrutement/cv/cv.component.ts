@@ -8,6 +8,7 @@ import { Personne } from '../models/Personne';
 })
 export class CvComponent implements OnInit {
   personnes: Personne[] = []; 
+  selectedPersonne : Personne = new Personne;
   
   constructor(){}
   
@@ -17,6 +18,10 @@ export class CvComponent implements OnInit {
       new Personne(2,'hammami','habib','chef','khouloud.jpg',44444,60)
 
     ];
+  }
+  PersonneSelected(personneSelected:any){
+    this.selectedPersonne=personneSelected;
+
   }
 
 }
