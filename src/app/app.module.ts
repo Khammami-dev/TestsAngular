@@ -14,6 +14,8 @@ import { StyleComponent } from './directive/style/style.component';
 import { MiniWordComponent } from './directive/mini-word/mini-word.component';
 import { ClasseComponent } from './directive/classe/classe.component';
 import { EmbaucheComponent } from './PlatfRecrutement/embauche/embauche.component';
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { EmbaucheComponent } from './PlatfRecrutement/embauche/embauche.componen
     StyleComponent,
     MiniWordComponent,
     ClasseComponent,
-    EmbaucheComponent
+    EmbaucheComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

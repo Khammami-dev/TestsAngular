@@ -8,13 +8,14 @@ import { Personne } from '../models/Personne';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent {
-  @Input() personne: Personne = new Personne();
-  @Output() SendPersonneSelected = new EventEmitter();
-  constructor(){}
-  SendSelectedPersonne(){
-    this.SendPersonneSelected.emit(
-      this.personne
-    );
+  @Input() personne: Personne = new Personne;
+ @Output() sendPersonne = new EventEmitter(); 
+  constructor() {}
+
+  ngOnInit(): void {}
+  SendSelectedPersonne() {
+    this.sendPersonne.emit(this.personne);
+    
   }
 
 }
