@@ -5,7 +5,9 @@ import { ColorComponent } from './color/color.component';
 import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
-  {path:'cv', component: CvComponent},
+
+  {path:'', redirectTo: '/', pathMatch: 'full'},
+  {path:'cv', component:CvComponent},
   {path:'color', component: ColorComponent},
   /*{path:'navbar', component: HeaderComponent}*/
 ];

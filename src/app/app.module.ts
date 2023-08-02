@@ -15,6 +15,8 @@ import { MiniWordComponent } from './directive/mini-word/mini-word.component';
 import { ClasseComponent } from './directive/classe/classe.component';
 import { EmbaucheComponent } from './PlatfRecrutement/embauche/embauche.component';
 import { HeaderComponent } from './header/header.component';
+import { AddcvComponent } from './PlatfRecrutement/addcv/addcv.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { HeaderComponent } from './header/header.component';
     MiniWordComponent,
     ClasseComponent,
     EmbaucheComponent,
-    HeaderComponent
+    HeaderComponent,
+    AddcvComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
